@@ -13,3 +13,7 @@ You are given the starting point: the `app.rb` file is just supposed to launch y
 ### How to start?
 
 Before coding, start to think about what objects you will need. How are these objects going to be related to each other? Don't hesitate to draw diagrams on paper if it helps you.
+
+# Test
+
+when you think you are good, type `rake` in your terminal, all tests must be green. Ideally you should not have any style offense.

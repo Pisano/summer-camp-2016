@@ -23,3 +23,7 @@ Make sure you can also detect paths like this:
 9&nbsp;9&nbsp;9&nbsp;**1**
 
 That is, 3 + 7 + 1 + 1 = 12.
+
+# Test
+
+when you think you are good, type `rake` in your terminal, all tests must be green. Ideally you should not have any style offense.

@@ -14,3 +14,7 @@ Example:
 fizz_buzz(10)
 # => [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 10]
 ```
+
+# Test
+
+when you think you are good, type `rake` in your terminal, all tests must be green. Ideally you should not have any style offense.

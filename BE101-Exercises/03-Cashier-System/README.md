@@ -25,3 +25,7 @@ puts cashier(basket) # => 26.84
 #### Hint
 
 Look at the highlighted words in the description, they are here to help you.
+
+# Test
+
+when you think you are good, type `rake` in your terminal, all tests must be green. Ideally you should not have any style offense.
