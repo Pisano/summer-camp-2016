@@ -2,6 +2,7 @@
 
 Define a function `maxOfThree()` that takes three numbers as arguments and
 returns the largest of them. Use the if-else control flow in Javascript.
+You must not make more than 2 comparisons.
 
 **Example:**
 
