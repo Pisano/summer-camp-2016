@@ -19,8 +19,8 @@ Write the program that prints the right result on the console.
 
 **Example:**
 
-* When we click second button, it should write `You clicked button #2`
-* When we click third button, it should write `You clicked button #3`
+* When we click second button, it should write `You clicked button #1`
+* When we click third button, it should write `You clicked button #2`
 
 # Test
 
