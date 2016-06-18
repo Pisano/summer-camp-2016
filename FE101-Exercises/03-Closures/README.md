@@ -3,9 +3,9 @@
 Consider the following code:
 
 ```javascript
-var nodes = document.getElementsByTagName('button');
-for (var i = 0; i < nodes.length; i++) {
-   nodes[i].addEventListener('click', () => {
+var buttons = document.getElementsByTagName('button');
+for (var i = 0; i < buttons.length; i++) {
+   buttons[i].addEventListener('click', () => {
       console.log('You clicked button #' + i);
    });
 }
