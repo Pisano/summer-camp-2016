@@ -3,6 +3,7 @@
 ## Table of Content
 
 - [FE101: JavaScript Syntax & Semantics](/FE101.md)
+- [FE105: HTML, CSS & DOM](/FE105.md)
 - [BE101: Ruby Syntax & Semantics](/BE101.md)
 - [BE101: Exercises](/BE101-Exercises)
   - [01-Fizz-Buzz](/BE101-Exercises/01-Fizz-Buzz)
