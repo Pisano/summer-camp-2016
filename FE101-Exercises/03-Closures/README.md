@@ -5,9 +5,9 @@ Consider the following code:
 ```javascript
 var buttons = document.getElementsByTagName('button');
 for (var i = 0; i < buttons.length; i++) {
-   buttons[i].addEventListener('click', () => {
-      console.log('You clicked button #' + i);
-   });
+  buttons[i].addEventListener('click', () => {
+    console.log('You clicked button #' + i);
+  });
 }
 ```
 
