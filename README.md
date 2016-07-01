@@ -14,6 +14,7 @@
 - [BE102b: Rails Advanced](/BE102b.md)
   - [Building an API](/BE102b.md#building-an-api)
   - [Authentication](/BE102b.md#authentication)
+- [BE201: Testing tools for Ruby and Rails](/BE201.md)
 - [SW201: Code Testing](/SW201.md)
 - [SW205: Web Services and Goodies](/SW305.md)
   - [Hosting and deployment](/SW305.md#hosting-and-deployment)
