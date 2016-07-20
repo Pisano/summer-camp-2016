@@ -5,7 +5,7 @@ from developers;
 
 
 
--- List all the developers with only their names and surnames. Example output:
+--- List all the developers with only their names and surnames. Example output:
 select name, surname
 from developers;
 
