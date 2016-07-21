@@ -61,3 +61,5 @@ Force your way to push the changes even if it has conflicts. Proceed with cautio
 
 ##Stash the changes
 For changes planned to be commited later or is not planned to commit, we can use this command
+
+`git stash`
