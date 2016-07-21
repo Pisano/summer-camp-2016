@@ -15,8 +15,7 @@ from developers;
 
 
 -- List all the developers with only their names and surnames concatenated in the same column. The column name should be "full_name". Example output:
-select name || ' ' || surname as full_name
-from developers;
+select name || ' ' || surname as full_name from developers;
 
 
 
