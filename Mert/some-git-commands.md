@@ -3,6 +3,7 @@
 This is a small tutorial on the most used commands on GitHub. If you have any questions or if you think the info given is wrong, feel free to contact me.
 
 ##Update the current repo on Main Branch
+
 To get the final updates, use this command.
 
 `git pull`
@@ -60,5 +61,3 @@ Force your way to push the changes even if it has conflicts. Proceed with cautio
 
 ##Stash the changes
 For changes planned to be commited later or is not planned to commit, we can use this command
-
-`git stash`
