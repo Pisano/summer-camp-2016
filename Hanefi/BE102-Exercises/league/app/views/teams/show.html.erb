@@ -1,0 +1,8 @@
+<!-- app/views/teams/show.html.erb -->
+<h1><%= @team.name %></h1>
+
+<p><%= link_to "See Players", team_players_path(@team) %></p>
+
+<%= link_to "All the teams", teams_path %> |
+<%= link_to "Edit", edit_team_path(@team) %> |
+<%= link_to "Destroy", team_path(@team), method: :delete, data: { confirm: "Are you sure?" } %>

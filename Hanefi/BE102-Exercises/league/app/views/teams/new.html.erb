@@ -1,0 +1,9 @@
+<!-- app/views/teams/new.html.erb -->
+<h1>New Team</h1>
+
+<%= form_for(@team) do |f| %>
+  <%= f.label :name %><br>
+  <%= f.text_field :name %><br>
+
+  <%= f.submit %>
+<% end %>
