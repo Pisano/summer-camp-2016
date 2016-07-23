@@ -79,7 +79,7 @@ WHERE NOT EXISTS
 -- List the developers with the number of languages they know.
 SELECT developers.name,
        developers.surname,
-       COUNT(*)
+       COALESCE(mahmut.COUNT(*),0)
 FROM developers
 JOIN developer_languages ON developer_languages.developer_id = developers.id
 GROUP BY developers.id;
