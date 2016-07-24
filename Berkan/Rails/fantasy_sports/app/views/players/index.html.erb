@@ -1,0 +1,10 @@
+<!-- app/views/players/index.html.erb -->
+<h1>Players for <%= @team.name %></h1>
+
+<ul>
+<% @player.each do |player| %>
+  <li><%= player.name %></li>
+<% end %>
+</ul>
+
+<%= link_to "New", new_team_player_path(@team) %>
