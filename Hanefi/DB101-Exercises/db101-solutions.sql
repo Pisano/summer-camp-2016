@@ -79,10 +79,13 @@ WHERE NOT EXISTS
 -- List the developers with the number of languages they know.
 SELECT developers.name,
        developers.surname,
-       COUNT(*)
+       COALESCE(dev_and_lang_count.count,0)
 FROM developers
-JOIN developer_languages ON developer_languages.developer_id = developers.id
-GROUP BY developers.id;
+LEFT JOIN
+  (SELECT developer_id,
+          COUNT(*) AS COUNT
+   FROM developer_languages
+   GROUP BY developer_id) dev_and_lang_count ON dev_and_lang_count.developer_id = developers.id;
 
 
 -- List the languages that is known by no developer.

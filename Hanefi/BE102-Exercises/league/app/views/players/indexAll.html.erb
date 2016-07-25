@@ -1,0 +1,8 @@
+<!-- app/views/players/index.html.erb -->
+<h1>Players in All Teams</h1>
+
+<ul>
+<% @players.each do |player| %>
+  <li><%= player.name + " " + player.surname %></li>
+<% end %>
+</ul>

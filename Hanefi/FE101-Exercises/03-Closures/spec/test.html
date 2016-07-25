@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>03-Closures Test</title>
+    <style type="text/css">
+      button {
+        width: 24%;
+        height: 100px;
+      }
+      #msg {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 2em;
+      }
+
+    </style>
+  </head>
+  <body>
+    <button>0</button>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <div id="msg"></div>
+  </body>
+  <script type="text/javascript">
+    (function() {
+      var log = console.log;
+      console.log = function(msg) {
+        document.getElementById("msg").innerHTML = "Console log message: " + msg;
+        log.apply(console, arguments);
+      };
+    })();
+  </script>
+  <script type="text/javascript" src="../lib/closures.js"></script>
+</html>
