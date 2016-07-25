@@ -18,7 +18,7 @@ The Shop is offering some discounts:
 Write a program in `lib/cashier.rb` that works and returns the correct price:
 
 ```ruby
-basket = [AP1, FR1, AP1, CF1, FR1, AP1] # (AP1: 5.0 + 5.0 + 2.50, FR1: 3.11 + 0)
+basket = [AP1, FR1, AP1, CF1, FR1, AP1] # (AP1: 5.0 + 5.0 + 2.50, FR1: 3.11 + 0, CF1: 11.23)
 puts cashier(basket) # => 26.84
 ```
 

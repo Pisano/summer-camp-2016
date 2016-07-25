@@ -18,6 +18,6 @@ describe "Cashier system" do
 
   it 'is $16.61 for [AP1, AP1, FR1, AP1]' do
     basket = [AP1, AP1, FR1, AP1]
-    expect(cashier(basket)).to eq(16.61)
+    expect(cashier(basket)).to eq(15.61)
   end
 end
