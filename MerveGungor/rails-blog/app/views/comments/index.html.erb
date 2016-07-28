@@ -1,0 +1,10 @@
+<!-- app/views/comments/index.html.erb -->
+<h1>Comments for <%= @post.title %></h1>
+
+<ul>
+<% @comments.each do |comment| %>
+  <li><%= comment.content %></li>
+<% end %>
+</ul>
+
+<%= link_to "New", new_post_comment_path(@post) %>
