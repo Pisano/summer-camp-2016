@@ -1,0 +1,9 @@
+<!-- app/views/teams/edit.html.erb -->
+<h1>Edit Team</h1>
+
+<%= form_for(@team) do |f| %>
+  <%= f.label :name %><br>
+  <%= f.text_field :name %><br>
+
+  <%= f.submit %>
+<% end %>

@@ -1,0 +1,6 @@
+<!-- app/views/players/index_all_players.html.erb -->
+<h1>Players</h1>
+<% @all_players.each do |player| %>
+  <p><%= player.name %></p>
+<% end %>
+<%= link_to "All Teams", teams_path %>
