@@ -1,0 +1,7 @@
+<!-- app/views/teams/index.html.erb -->
+<h1>Teams</h1>
+<% @teams.each do |team| %>
+  <h2><%= link_to team.name, team %></h2>
+<% end %>
+<%= link_to "New Team", new_team_path %> |
+<%= link_to "All Players", players_path %>
