@@ -15,8 +15,8 @@ var maxOfThree=(a,b,c)=>{
 module.exports = maxOfThree; // DO NOT CHANGE THIS
 
 
-//1'den fazla sayıdan en büyüğünü bulma.
-//1. yol
+
+//1#
 function maxOfThree(arr) {
 
   var max = arr[0];
@@ -28,7 +28,7 @@ function maxOfThree(arr) {
   return max;
 }
 
-//2.yol
+//2#
 
 function maxOfThree2(arr) {
   var max = arr[0];
