@@ -1,0 +1,28 @@
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+
+<script src="AddNumbersController.js"></script>
+<div ng-app="AddNumbersApp">
+    <div ng-controller="AddNumbersController">
+        <input ng-model="a" ng-keyup="AddNumbers()">
+        <input ng-model="b" ng-keyup="AddNumbers()">
+        <h1>{{ sum }}</h1>
+    </div>
+</div>
+
+<!--
+<script src= "calculator.js"></script>
+
+<div ng-app="CalculatorApp" ng-controller="CalculatorController">
+  <p><input type="number" ng-model="a"></p>
+  <p><input type="number" ng-model="b"></p>
+  <p><select ng-model="operator">
+        <option>+</option>
+        <option>*</option>
+        <option>-</option>
+        <option>/</option>
+     </select></p>
+  <p>{{ result() }}</p>
+ </div>
+
+-->
