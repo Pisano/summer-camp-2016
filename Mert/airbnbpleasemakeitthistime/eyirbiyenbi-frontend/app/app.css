@@ -1,0 +1,15 @@
+/* BGCOLOR      #FAFAFA */
+/* FONTCOLOR    #3A4057 */
+/* PRIMARYCOLOR #31B88F */
+
+body {
+  background: #FAFAFA;
+  color: #3A4057;
+}
+
+.icon {
+  background-image: url('../assets/logo_green.svg');
+  height: 72px;
+  margin: auto;
+  width: 204px;
+}

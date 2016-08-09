@@ -1,0 +1,24 @@
+<h1>Eyırbiyenbi Home</h1>
+<div class="listing-item" ng-repeat="listing in $ctrl.listings" >
+    <div> <br> </div>
+    <h2>{{listing.title}}</h2>
+    <div>
+      Bed Capacity: <span ng-repeat="bedCount in $ctrl.getBedCapacityCount(listing) track by $index" > ♥ </span>  <!-- {{listing.bed_capacity}} -->
+    </div>
+
+    <div>
+      <span> Created: {{listing.created_at |date }} </span>
+
+      <div>
+      <span> Owner Name: {{$ctrl.printPhoneNumberOfListing(listing)[0].first_name}} {{$ctrl.printPhoneNumberOfListing(listing)[0].last_name}} </span>
+      </div>
+      <span>Phone: {{$ctrl.printPhoneNumberOfListing(listing)[0].phone_number}}  </span>
+      <div>
+        E-mail: <a href="mailto:{{$ctrl.printPhoneNumberOfListing(listing)[0].email}} "> {{$ctrl.printPhoneNumberOfListing(listing)[0].email}} </a>
+      </div>
+      <br>
+    </div>
+
+  <img ng-src="{{ listing.image_url}}">
+  <br>
+ </div>
