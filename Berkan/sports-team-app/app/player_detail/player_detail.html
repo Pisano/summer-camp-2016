@@ -1,0 +1,39 @@
+<h1>Player</h1>
+<p>Name: {{ $ctrl.playerDetail.name }}</p>
+<p>Team: <a href="/teams/{{$ctrl.playerDetail.team.id}}">{{ $ctrl.playerDetail.team.name }}</a></p>
+<!--table class="table table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Player Name</th>
+      <th>Actions</th>
+    </tr>
+  </thead-->
+  <!--tbody>
+    <tr ng-repeat="player in $ctrl.teamDetail.players">
+      <td>
+      {{ player.id }}
+      </td>
+      <td>
+      {{ player.name }}
+      </td>
+      <td>
+        <button class="btn btn-xs btn-danger"
+                ng-click="$ctrl.removePlayer(player)">
+          <span class="ff-icon glyphicon glyphicon-remove"></span>
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+      <form class="form-inline" ng-submit="$ctrl.addPlayer()">
+        <input class="form-control input-xs" type="text"
+               ng-model="$ctrl.newPlayerForm.name">
+        <input type="submit" class="btn btn-primary" />
+      </form>
+      </td>
+      <td></td>
+    </tr>
+  </tbody>
+</table-->

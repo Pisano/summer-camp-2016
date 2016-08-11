@@ -1,0 +1,33 @@
+{
+  "name": "sports-team-app",
+  "version": "1.0.0",
+  "description": "Sports Team Frontend Application",
+  "repository": {
+    "type": "git",
+    "url": "github.com/Pisano/sports-team-app"
+  },
+  "author": "Pisano Summer Camp 2016",
+  "license": "ISC",
+  "devDependencies": {
+    "angular-ui-router": "^0.3.1",
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "bootstrap": "^3.3.7",
+    "bootstrap-webpack": "0.0.5",
+    "css-loader": "^0.23.1",
+    "exports-loader": "^0.6.3",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "imports-loader": "^0.6.5",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "style-loader": "^0.13.1",
+    "text-loader": "0.0.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "angular": "^1.5.8"
+  }
+}
