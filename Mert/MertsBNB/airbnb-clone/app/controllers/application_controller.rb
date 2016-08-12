@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::API
+<<<<<<< HEAD
   include ActionController::HttpAuthentication::Token::ControllerMethods
   before_action :authenticate_by_token
 
@@ -16,4 +17,6 @@ class ApplicationController < ActionController::API
       end
     end
 
+=======
+>>>>>>> 9a4bfa75de63aa2cf6ce3e1e4277bd8edb1e198b
 end
