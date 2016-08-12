@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :update, :destroy]
+  skip_before_action :authenticate_by_token, only: [:create]
 
   # GET /users
   def index
@@ -37,6 +38,31 @@ class UsersController < ApplicationController
   def destroy
     @user.destroy
   end
+
+
+  def login
+    user = User.find_by(email: params[:user][:password])
+    if user && user.authenticate(params[:user][:password])
+      #generate token
+      user.generate_token!
+
+      render json: user
+    else
+      render json: {},status: :unprocessable_entity
+    end
+
+  end
+
+  def logout
+    #destroy token
+    @current_user.update(token: nil)
+
+    render json: @current_user
+  end
+
+
+
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
