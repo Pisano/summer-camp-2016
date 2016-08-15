@@ -1,0 +1,57 @@
+<h4>{{ $ctrl.header }}</h4>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Team Name</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="team in $ctrl.teams">
+      <td>
+        <a href="/teams/{{team.id}}">
+          {{ team.id }}
+        </a>
+      </td>
+      <td>
+        <a href="/teams/{{team.id}}" ng-hide="$ctrl.editThisTeam.id == team.id">
+          {{ team.name }}
+        </a>
+        <input type="text" placeholder="{{team.name}}" ng-show="$ctrl.editThisTeam.id == team.id" ng-model="$ctrl.editTeamForm.name">
+        <button class="btn btn-xs btn-primary" ng-click="$ctrl.editTeam(team)" ng-show="$ctrl.editThisTeam.id == team.id">
+          <span class="ff-icon glyphicon glyphicon-ok"></span>
+        </button>
+        <button class="btn btn-xs btn-danger" ng-click="$ctrl.closeEditForm()" ng-show="$ctrl.editThisTeam.id == team.id">
+          <span class="ff-icon glyphicon glyphicon-remove"></span>
+        </button>
+      </td>
+      <td>
+        <button class="btn btn-xs btn-danger" ng-click="$ctrl.removeTeam(team)">
+          <span class="ff-icon glyphicon glyphicon-remove"></span>
+        </button>
+        <button class="btn btn-xs btn-warning" ng-click="$ctrl.openEditForm(team)">
+          <span class="ff-icon glyphicon glyphicon-pencil"></span>
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <form class="form-inline" ng-submit="$ctrl.addTeam()">
+          <input class="form-control input-xs" type="text" ng-model="$ctrl.newTeamForm.name">
+          <input type="submit" class="btn btn-primary" />
+        </form>
+      </td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<!--ul>
+  <li ng-repeat="team in $ctrl.teams">
+    <a href="/teams/{{team.id}}">
+      {{ team.name }}
+    </a>
+  </li>
+</ul-->
