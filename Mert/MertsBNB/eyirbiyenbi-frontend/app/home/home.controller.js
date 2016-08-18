@@ -1,5 +1,6 @@
 class HomeController {
-  constructor($http, ListingModel, API_URL) {
+  constructor($http, ListingModel, API_URL ,$state) {
+    this.$state= $state;
     this.$http = $http;
     this.API_URL = API_URL;
     this.ListingModel = ListingModel;
@@ -29,13 +30,24 @@ class HomeController {
     return new Array(listing.bed_capacity);
   }
 
+  goToHome(){
+    this.$state.go('home')
+  }
 
+  goToLogin(){
+    this.$state.go('loginPage');
+
+  }
+
+  goToListing(listing){
+    this.$state.go(listing.id);
+  }
 
 }
 
 
 
 
-HomeController.$inject = ['$http', 'ListingModel'];
+HomeController.$inject = ['$http', 'ListingModel', 'API_URL' ,'$state'];
 
 export default HomeController;

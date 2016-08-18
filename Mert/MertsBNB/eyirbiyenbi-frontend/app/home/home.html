@@ -1,5 +1,5 @@
 <div class="login-signup-buttons" align="right">
-  <button type="button" class="btn btn-default">Login</button>
+  <button ng-click="$ctrl.goToLogin()" class="btn btn-default">Login</button>
   <button type="button" class="btn btn-primary">Sign up!</button>
 </div>
 
@@ -9,7 +9,7 @@
 </div>
 
 <div class="listing-item" ng-repeat="listing in $ctrl.listings" >
-  <h2>{{listing.title}}</h2>
+  <h2><a href="/listingPage/{{listing.id}}"> {{listing.title}} </a></h2>
 
   <div class="listing-content ">
     <div class="listing-image">

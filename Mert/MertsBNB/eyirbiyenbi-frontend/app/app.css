@@ -25,6 +25,7 @@ body {
 
 .listing-props {
   flex-grow: 1;
-  justify-content: center;
+  margin-left: 30px;
   display: flex;
+  font-size: 110%;
 }

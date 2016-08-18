@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::API
-<<<<<<< HEAD
+# <<<<<<< HEAD
   include ActionController::HttpAuthentication::Token::ControllerMethods
   before_action :authenticate_by_token
 
@@ -9,7 +9,7 @@ class ApplicationController < ActionController::API
         @current_user = User.find_by(token: token)
       end
 
-      @current_user ||= User.find_by(token: params[:token])
+      @current_user ||= params[:token] && User.find_by(token: params[:token])
 
       unless @current_user
         self.headers['WWW-Authenticate'] = 'Token realm="Application"'
@@ -17,6 +17,6 @@ class ApplicationController < ActionController::API
       end
     end
 
-=======
->>>>>>> 9a4bfa75de63aa2cf6ce3e1e4277bd8edb1e198b
+# =======
+# >>>>>>> 9a4bfa75de63aa2cf6ce3e1e4277bd8edb1e198b
 end

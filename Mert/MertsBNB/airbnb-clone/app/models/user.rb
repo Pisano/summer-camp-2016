@@ -2,7 +2,7 @@ class User < ApplicationRecord
 
   has_many :listings
   has_secure_password
-<<<<<<< HEAD
+# <<<<<<< HEAD
 
   validates :email, uniqueness: true
   validates :token, uniqueness: true, allow_blank: true
@@ -18,6 +18,6 @@ class User < ApplicationRecord
     self
   end
 
-=======
->>>>>>> 9a4bfa75de63aa2cf6ce3e1e4277bd8edb1e198b
+# =======
+# >>>>>>> 9a4bfa75de63aa2cf6ce3e1e4277bd8edb1e198b
 end

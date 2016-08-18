@@ -1,0 +1,36 @@
+
+<h2><a href="/listingPage/{{$ctrl.listing.id}}"> {{$ctrl.listing.title}} </a></h2>
+
+<div class="listing-content ">
+  <div class="listing-image">
+    <img ng-src="{{ $ctrl.listing.image_url}}" align="left"> </tr>
+  </div>
+
+
+  <div class="listing-props">
+    <div class="justify-center">
+      <div>
+        Bed Capacity: <span ng-model="bedCount in $ctrl.getBedCapacityCount($ctrl.listing) track by $index" > ♥ </span>  <!-- {{listing.bed_capacity}} -->
+      </div>
+
+      <span> Created: {{$ctrl.listing.created_at |date }} </span>
+
+      <div>
+        <span> Owner Name: {{$ctrl.printPhoneNumberOfListing(($ctrl.listing))[0].first_name}} {{$ctrl.printPhoneNumberOfListing(($ctrl.listing))[0].last_name}} </span>
+      </div>
+      <span>Phone: {{$ctrl.printPhoneNumberOfListing($ctrl.listing)[0].phone_number}}  </span>
+      <div>
+        E-mail: <a href="mailto:{{$ctrl.printPhoneNumberOfListing($ctrl.listing)[0].email}} "> {{$ctrl.printPhoneNumberOfListing($ctrl.listing)[0].email}} </a>
+      </div>
+      <br>
+    </div>
+
+    <div class="ng-map-style">
+       <ng-map center="-25.363882,131.044922" zoom="4">
+          <marker position="-25.363882,131.044922" title="Hello World!"></marker>
+       </ng-map>
+    </div>
+
+  </div>
+
+</div>

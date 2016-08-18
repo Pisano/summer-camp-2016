@@ -1,5 +1,6 @@
 class ListingsController < ApplicationController
   before_action :set_listing, only: [:show, :update, :destroy]
+  skip_before_action :authenticate_by_token, only: [:index, :show]
 
   # GET /listings
   def index

@@ -13,6 +13,10 @@ class ListingModel {
   getUsers (){
     return this.$http.get(this.API_URL + '/users')
   }
+
+  getListing(listingID){
+    return this.$http.get(this.API_URL + '/listings/' + listingID);
+  }
 }
 
 ListingModel.$inject = ['$http', 'API_URL'];
