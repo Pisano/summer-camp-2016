@@ -6,7 +6,7 @@ import LoginPage from '../loginPage';
 const home = angular
   .module('home', [
     uiRouter,
-    LoginPage
+    LoginPage,
   ])
   .config(($stateProvider, $urlRouterProvider) => {
     $stateProvider

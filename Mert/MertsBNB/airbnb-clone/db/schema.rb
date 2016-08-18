@@ -10,11 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20160812124028) do
-=======
-ActiveRecord::Schema.define(version: 20160803085816) do
->>>>>>> 9a4bfa75de63aa2cf6ce3e1e4277bd8edb1e198b
+ActiveRecord::Schema.define(version: 20160818142030) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,6 +25,9 @@ ActiveRecord::Schema.define(version: 20160803085816) do
     t.float    "daily_price"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
+    t.float    "location_lat"
+    t.float    "location_lon"
+    t.string   "location_name"
   end
 
   create_table "users", force: :cascade do |t|
@@ -40,10 +39,7 @@ ActiveRecord::Schema.define(version: 20160803085816) do
     t.string   "profile_picture_url"
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
-<<<<<<< HEAD
     t.string   "token"
-=======
->>>>>>> 9a4bfa75de63aa2cf6ce3e1e4277bd8edb1e198b
   end
 
 end

@@ -10,6 +10,9 @@
   <div class="listing-props">
     <div class="justify-center">
       <div>
+        Location: {{$ctrl.listing.location_name}}
+      </div>
+      <div>
       Bed Capacity: <span ng-repeat="bedCount in $ctrl.getBedCapacityCount($ctrl.listing) track by $index" > ♥ </span>  <!-- {{listing.bed_capacity}} -->
       </div>
 
@@ -33,7 +36,7 @@
 
 <div class="ng-map-style">
   <br>
-   <ng-map center="-25.363882,131.044922" zoom="4">
-    <marker position="-25.363882,131.044922" title="Hello World!"></marker>
+   <ng-map center="{{$ctrl.listing.location_name}}" zoom="8">
+    <marker position="{{$ctrl.listing.location_name}}" title="Hello World!"></marker>
   </ng-map>
 </div>
