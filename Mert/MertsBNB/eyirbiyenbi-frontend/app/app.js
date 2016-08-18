@@ -19,7 +19,8 @@ const root = angular
     ListingPage,
     Listing,
     UserDetails,
-    LoginPage
+    LoginPage,
+    'ngMap'
   ])
   .config(($locationProvider, $urlRouterProvider) => {
     $locationProvider.html5Mode({

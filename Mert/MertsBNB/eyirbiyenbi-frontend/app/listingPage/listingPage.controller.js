@@ -40,10 +40,7 @@ class ListingPageController{
     return new Array(listing.bed_capacity);
   }
 
-
-
   loadListingDetails(){
-
   }
 
 
