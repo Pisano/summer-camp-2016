@@ -10,6 +10,7 @@ import Listing from './models/listing';
 import ListingPage from './listingPage';
 import LoginPage from './loginPage';
 import UserDetails from './userDetails';
+import AddListingPage from './addListingPage';
 
 const root = angular
   .module('eyirbiyenbiApp', [
@@ -19,6 +20,7 @@ const root = angular
     ListingPage,
     Listing,
     UserDetails,
+    AddListingPage,
     LoginPage,
     'ngMap'
   ])

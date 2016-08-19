@@ -1,3 +1,8 @@
 .fullscreen-video{
   max-width: 100%;
 }
+
+.main-page-header{
+  display: flex;
+  justify-content: center;
+}

@@ -39,6 +39,10 @@ class HomeController {
 
   }
 
+  goToAddListing(){
+    this.$state.go('addListingPage');
+  }
+
   goToListing(listing){
     this.$state.go(listing.id);
   }

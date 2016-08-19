@@ -10,7 +10,10 @@
 
 <div class="main-page-header">
   <h1>Eyırbiyenbi Home</h1>
-  <button type="button" class="btn btn-info">List Your Room!</button>
+</div>
+
+<div class="list-your-room-button">
+    <button ng-click="$ctrl.goToAddListing()" class="btn btn-info">List Your Room!</button>
 </div>
 
 <div class="listing-item" ng-repeat="listing in $ctrl.listings" >

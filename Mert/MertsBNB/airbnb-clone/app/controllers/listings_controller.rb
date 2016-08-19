@@ -47,6 +47,7 @@ class ListingsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def listing_params
-      params.fetch(:listing, {})
+      #params.fetch(:listing, {})
+      params.require(:listing).permit(:image_url, :user_id, :title, :location_name, :guest_capacity, :bed_capacity, :daily_price, :location_lon,:location_lat)
     end
 end

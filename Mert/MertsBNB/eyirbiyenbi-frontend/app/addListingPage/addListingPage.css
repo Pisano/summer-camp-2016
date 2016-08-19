@@ -1,0 +1,26 @@
+.add-items-container{
+  margin: 0 auto ;
+
+}
+
+.add-item-item{
+    margin: 0 auto;
+
+
+}
+
+.add-items-input{
+    margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+}
+
+.add-item-item .my-input-label{
+  flex-basis: 100px;
+}
+
+.submit-item-button{
+  display: flex;
+  justify-content: center;
+}

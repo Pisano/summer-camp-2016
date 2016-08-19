@@ -1,8 +1,24 @@
 .my-login-page{
-   margin-left: auto;
-    margin-right: auto;
+  margin: 0 auto ;
 }
 
 .login-input-fields{
-  text-align: center;
+  margin: 0 auto ;
+
+}
+
+.cool-class{
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+}
+
+.cool-class .cool-label {
+    flex-basis: 100px;
+}
+
+.cool-button{
+  display: flex;
+  justify-content: center;
 }
